@@ -1,0 +1,232 @@
+; 1,4-LJ=GAFF2, Q=GAFF2, bonds=mSem, angles=mSem, dihedrals=GAFF2 (GAGASESEGA)
+[ moleculetype ]
+;name            nrexcl
+ TYM              3
+
+[ atoms ]
+;   nr  type  resi  res  atom  cgnr     charge      mass       ; qtot   bond_type
+     1   c3     1   TYM     C    1    -0.054800     12.01000 ; qtot -0.055
+     2   ca     1   TYM    C1    2    -0.046300     12.01000 ; qtot -0.101
+     3   ca     1   TYM    C2    3    -0.158000     12.01000 ; qtot -0.259
+     4   ca     1   TYM    C3    4     0.130100     12.01000 ; qtot -0.129
+     5   ca     1   TYM    C4    5    -0.156300     12.01000 ; qtot -0.285
+     6   ca     1   TYM    C5    6    -0.088000     12.01000 ; qtot -0.373
+     7   ca     1   TYM    C6    7    -0.166000     12.01000 ; qtot -0.539
+     8   c3     1   TYM    C7    8    -0.020400     12.01000 ; qtot -0.560
+     9   c3     1   TYM    C8    9    -0.090600     12.01000 ; qtot -0.650
+    10   c3     1   TYM    C9   10    -0.090600     12.01000 ; qtot -0.741
+    11   oh     1   TYM     O   11    -0.505101     16.00000 ; qtot -1.246
+    12   hc     1   TYM     H   12     0.046033      1.00800 ; qtot -1.200
+    13   hc     1   TYM    H1   13     0.046033      1.00800 ; qtot -1.154
+    14   hc     1   TYM    H2   14     0.046033      1.00800 ; qtot -1.108
+    15   ha     1   TYM    H3   15     0.149000      1.00800 ; qtot -0.959
+    16   ha     1   TYM    H4   16     0.133000      1.00800 ; qtot -0.826
+    17   ha     1   TYM    H5   17     0.132000      1.00800 ; qtot -0.694
+    18   hc     1   TYM    H6   18     0.042700      1.00800 ; qtot -0.651
+    19   hc     1   TYM    H7   19     0.038367      1.00800 ; qtot -0.613
+    20   hc     1   TYM    H8   20     0.038367      1.00800 ; qtot -0.574
+    21   hc     1   TYM    H9   21     0.038367      1.00800 ; qtot -0.536
+    22   hc     1   TYM   H10   22     0.038367      1.00800 ; qtot -0.498
+    23   hc     1   TYM   H11   23     0.038367      1.00800 ; qtot -0.459
+    24   hc     1   TYM   H12   24     0.038367      1.00800 ; qtot -0.421
+    25   ho     1   TYM   H13   25     0.421000      1.00800 ; qtot 0.000
+
+[ bonds ]
+; atom_i  atom_j  functype      r0 (nm)    k (kJ/mol/nm^2)
+    1       2         1        0.150690     1.934114E+05     ; C-C, mSeminario method
+    1      12         1        0.109144     2.844936E+05     ; C-H, mSeminario method
+    1      13         1        0.109143     2.845255E+05     ; C-H, mSeminario method
+    1      14         1        0.108877     2.914994E+05     ; C-H, mSeminario method
+    2       3         1        0.138996     3.191865E+05     ; C-C, mSeminario method
+    2       7         1        0.139445     3.050615E+05     ; C-C, mSeminario method
+    3       4         1        0.139238     2.837433E+05     ; C-C, mSeminario method
+    3      15         1        0.108225     3.104579E+05     ; C-H, mSeminario method
+    4       5         1        0.140298     2.944594E+05     ; C-C, mSeminario method
+    4      11         1        0.137021     2.622700E+05     ; C-O, mSeminario method
+    5       6         1        0.139543     3.024588E+05     ; C-C, mSeminario method
+    5       8         1        0.152202     1.683409E+05     ; C-C, mSeminario method
+    6       7         1        0.138734     3.240379E+05     ; C-C, mSeminario method
+    6      16         1        0.108229     3.083023E+05     ; C-H, mSeminario method
+    7      17         1        0.108189     3.102808E+05     ; C-H, mSeminario method
+    8       9         1        0.153697     1.606382E+05     ; C-C, mSeminario method
+    8      10         1        0.153758     1.597699E+05     ; C-C, mSeminario method
+    8      18         1        0.109545     2.659829E+05     ; C-H, mSeminario method
+    9      19         1        0.109016     2.875204E+05     ; C-H, mSeminario method
+    9      20         1        0.109097     2.863882E+05     ; C-H, mSeminario method
+    9      21         1        0.108970     2.901376E+05     ; C-H, mSeminario method
+   10      22         1        0.108982     2.899976E+05     ; C-H, mSeminario method
+   10      23         1        0.109111     2.859638E+05     ; C-H, mSeminario method
+   10      24         1        0.109041     2.872875E+05     ; C-H, mSeminario method
+   11      25         1        0.096024     4.772702E+05     ; O-H, mSeminario method
+
+[ pairs ]
+;   ai     aj    funct
+     1      4      1 ;      C - C3    
+     1      6      1 ;      C - C5    
+     1     15      1 ;      C - H3    
+     1     17      1 ;      C - H5    
+     2      5      1 ;     C1 - C4    
+     2     11      1 ;     C1 - O     
+     2     16      1 ;     C1 - H4    
+     3      6      1 ;     C2 - C5    
+     3      8      1 ;     C2 - C7    
+     3     17      1 ;     C2 - H5    
+     3     25      1 ;     C2 - H13   
+     4      7      1 ;     C3 - C6    
+     4      9      1 ;     C3 - C8    
+     4     10      1 ;     C3 - C9    
+     4     16      1 ;     C3 - H4    
+     4     18      1 ;     C3 - H6    
+     5     15      1 ;     C4 - H3    
+     5     17      1 ;     C4 - H5    
+     5     19      1 ;     C4 - H7    
+     5     20      1 ;     C4 - H8    
+     5     21      1 ;     C4 - H9    
+     5     22      1 ;     C4 - H10   
+     5     23      1 ;     C4 - H11   
+     5     24      1 ;     C4 - H12   
+     5     25      1 ;     C4 - H13   
+     6      9      1 ;     C5 - C8    
+     6     10      1 ;     C5 - C9    
+     6     11      1 ;     C5 - O     
+     6     18      1 ;     C5 - H6    
+     7      8      1 ;     C6 - C7    
+     7     15      1 ;     C6 - H3    
+     8     11      1 ;     C7 - O     
+     8     16      1 ;     C7 - H4    
+     9     22      1 ;     C8 - H10   
+     9     23      1 ;     C8 - H11   
+     9     24      1 ;     C8 - H12   
+    10     19      1 ;     C9 - H7    
+    10     20      1 ;     C9 - H8    
+    10     21      1 ;     C9 - H9    
+    11     15      1 ;      O - H3    
+    12      3      1 ;      H - C2    
+    12      7      1 ;      H - C6    
+    13      3      1 ;     H1 - C2    
+    13      7      1 ;     H1 - C6    
+    14      3      1 ;     H2 - C2    
+    14      7      1 ;     H2 - C6    
+    16     17      1 ;     H4 - H5    
+    18     19      1 ;     H6 - H7    
+    18     20      1 ;     H6 - H8    
+    18     21      1 ;     H6 - H9    
+    18     22      1 ;     H6 - H10   
+    18     23      1 ;     H6 - H11   
+    18     24      1 ;     H6 - H12   
+
+[ angles ]
+; atom_i  atom_j  atom_k  functype    a0 (Deg.)  k (kJ/mol/rad^2)
+    2       1      12         1       111.262      4.451688E+02     ; C-C-H, mSeminario method
+    2       1      13         1       111.263      4.453852E+02     ; C-C-H, mSeminario method
+    2       1      14         1       111.271      3.684873E+02     ; C-C-H, mSeminario method
+   12       1      13         1       107.126      2.615889E+02     ; H-C-H, mSeminario method
+   12       1      14         1       107.864      2.751972E+02     ; H-C-H, mSeminario method
+   13       1      14         1       107.866      2.761839E+02     ; H-C-H, mSeminario method
+    1       2       3         1       120.530      6.464642E+02     ; C-C-C, mSeminario method
+    1       2       7         1       121.439      6.482272E+02     ; C-C-C, mSeminario method
+    3       2       7         1       118.031      8.568512E+02     ; C-C-C, mSeminario method
+    2       3       4         1       121.375      7.430012E+02     ; C-C-C, mSeminario method
+    2       3      15         1       120.783      2.757693E+02     ; C-C-H, mSeminario method
+    4       3      15         1       117.842      2.698885E+02     ; C-C-H, mSeminario method
+    3       4       5         1       121.113      1.011769E+03     ; C-C-C, mSeminario method
+    3       4      11         1       115.517      7.659235E+02     ; C-C-O, mSeminario method
+    5       4      11         1       123.369      7.821392E+02     ; C-C-O, mSeminario method
+    4       5       6         1       116.667      7.934928E+02     ; C-C-C, mSeminario method
+    4       5       8         1       122.951      6.573323E+02     ; C-C-C, mSeminario method
+    6       5       8         1       120.379      6.830775E+02     ; C-C-C, mSeminario method
+    5       6       7         1       122.441      8.130472E+02     ; C-C-C, mSeminario method
+    5       6      16         1       118.956      2.774297E+02     ; C-C-H, mSeminario method
+    7       6      16         1       118.603      2.777330E+02     ; C-C-H, mSeminario method
+    2       7       6         1       120.372      8.210881E+02     ; C-C-C, mSeminario method
+    2       7      17         1       119.915      2.706161E+02     ; C-C-H, mSeminario method
+    6       7      17         1       119.713      2.697069E+02     ; C-C-H, mSeminario method
+    5       8       9         1       112.173      9.279684E+02     ; C-C-C, mSeminario method
+    5       8      10         1       111.761      9.006600E+02     ; C-C-C, mSeminario method
+    5       8      18         1       109.217      3.675978E+02     ; C-C-H, mSeminario method
+    9       8      10         1       111.211      8.688210E+02     ; C-C-C, mSeminario method
+    9       8      18         1       105.828      4.287890E+02     ; C-C-H, mSeminario method
+   10       8      18         1       106.284      4.215243E+02     ; C-C-H, mSeminario method
+    8       9      19         1       111.164      3.908677E+02     ; C-C-H, mSeminario method
+    8       9      20         1       110.601      4.331186E+02     ; C-C-H, mSeminario method
+    8       9      21         1       111.212      4.337398E+02     ; C-C-H, mSeminario method
+   19       9      20         1       107.684      3.307530E+02     ; H-C-H, mSeminario method
+   19       9      21         1       107.745      2.905825E+02     ; H-C-H, mSeminario method
+   20       9      21         1       108.295      2.693862E+02     ; H-C-H, mSeminario method
+    8      10      22         1       111.249      4.606273E+02     ; C-C-H, mSeminario method
+    8      10      23         1       110.771      4.188135E+02     ; C-C-H, mSeminario method
+    8      10      24         1       110.863      3.604433E+02     ; C-C-H, mSeminario method
+   22      10      23         1       108.295      2.624729E+02     ; H-C-H, mSeminario method
+   22      10      24         1       107.677      3.021640E+02     ; H-C-H, mSeminario method
+   23      10      24         1       107.850      3.283910E+02     ; H-C-H, mSeminario method
+    4      11      25         1       110.040      5.860192E+02     ; C-O-H, mSeminario method
+
+[ dihedrals ] ; propers
+; for gromacs 4.5 or higher, using funct 9
+;    i      j      k      l   func   phase     kd      pn
+     1      2      3      4      9   180.00  15.16700   2 ;      C-    C1-    C2-    C3
+     1      2      3     15      9   180.00  15.16700   2 ;      C-    C1-    C2-    H3
+     1      2      7      6      9   180.00  15.16700   2 ;      C-    C1-    C6-    C5
+     1      2      7     17      9   180.00  15.16700   2 ;      C-    C1-    C6-    H5
+     2      3      4      5      9   180.00  15.16700   2 ;     C1-    C2-    C3-    C4
+     2      3      4     11      9   180.00  15.16700   2 ;     C1-    C2-    C3-     O
+     2      7      6      5      9   180.00  15.16700   2 ;     C1-    C6-    C5-    C4
+     2      7      6     16      9   180.00  15.16700   2 ;     C1-    C6-    C5-    H4
+     3      2      7      6      9   180.00  15.16700   2 ;     C2-    C1-    C6-    C5
+     3      2      7     17      9   180.00  15.16700   2 ;     C2-    C1-    C6-    H5
+     3      4      5      6      9   180.00  15.16700   2 ;     C2-    C3-    C4-    C5
+     3      4      5      8      9   180.00  15.16700   2 ;     C2-    C3-    C4-    C7
+     3      4     11     25      9   180.00   3.57732   2 ;     C2-    C3-     O-   H13
+     4      3      2      7      9   180.00  15.16700   2 ;     C3-    C2-    C1-    C6
+     4      5      6      7      9   180.00  15.16700   2 ;     C3-    C4-    C5-    C6
+     4      5      6     16      9   180.00  15.16700   2 ;     C3-    C4-    C5-    H4
+     4      5      8      9      9   180.00   1.00416   2 ;     C3-    C4-    C7-    C8
+     4      5      8     10      9   180.00   1.00416   2 ;     C3-    C4-    C7-    C9
+     4      5      8     18      9     0.00   0.00000   0 ;     C3-    C4-    C7-    H6
+     5      4      3     15      9   180.00  15.16700   2 ;     C4-    C3-    C2-    H3
+     5      4     11     25      9   180.00   3.57732   2 ;     C4-    C3-     O-   H13
+     5      6      7     17      9   180.00  15.16700   2 ;     C4-    C5-    C6-    H5
+     5      8      9     19      9     0.00   0.65084   3 ;     C4-    C7-    C8-    H7
+     5      8      9     20      9     0.00   0.65084   3 ;     C4-    C7-    C8-    H8
+     5      8      9     21      9     0.00   0.65084   3 ;     C4-    C7-    C8-    H9
+     5      8     10     22      9     0.00   0.65084   3 ;     C4-    C7-    C9-   H10
+     5      8     10     23      9     0.00   0.65084   3 ;     C4-    C7-    C9-   H11
+     5      8     10     24      9     0.00   0.65084   3 ;     C4-    C7-    C9-   H12
+     6      5      4     11      9   180.00  15.16700   2 ;     C5-    C4-    C3-     O
+     6      5      8      9      9   180.00   1.00416   2 ;     C5-    C4-    C7-    C8
+     6      5      8     10      9   180.00   1.00416   2 ;     C5-    C4-    C7-    C9
+     6      5      8     18      9     0.00   0.00000   0 ;     C5-    C4-    C7-    H6
+     7      2      3     15      9   180.00  15.16700   2 ;     C6-    C1-    C2-    H3
+     7      6      5      8      9   180.00  15.16700   2 ;     C6-    C5-    C4-    C7
+     8      5      4     11      9   180.00  15.16700   2 ;     C7-    C4-    C3-     O
+     8      5      6     16      9   180.00  15.16700   2 ;     C7-    C4-    C5-    H4
+     9      8     10     22      9     0.00   0.54392   3 ;     C8-    C7-    C9-   H10
+     9      8     10     23      9     0.00   0.54392   3 ;     C8-    C7-    C9-   H11
+     9      8     10     24      9     0.00   0.54392   3 ;     C8-    C7-    C9-   H12
+    10      8      9     19      9     0.00   0.54392   3 ;     C9-    C7-    C8-    H7
+    10      8      9     20      9     0.00   0.54392   3 ;     C9-    C7-    C8-    H8
+    10      8      9     21      9     0.00   0.54392   3 ;     C9-    C7-    C8-    H9
+    11      4      3     15      9   180.00  15.16700   2 ;      O-    C3-    C2-    H3
+    12      1      2      3      9     0.00   0.00000   0 ;      H-     C-    C1-    C2
+    12      1      2      7      9     0.00   0.00000   0 ;      H-     C-    C1-    C6
+    13      1      2      3      9     0.00   0.00000   0 ;     H1-     C-    C1-    C2
+    13      1      2      7      9     0.00   0.00000   0 ;     H1-     C-    C1-    C6
+    14      1      2      3      9     0.00   0.00000   0 ;     H2-     C-    C1-    C2
+    14      1      2      7      9     0.00   0.00000   0 ;     H2-     C-    C1-    C6
+    16      6      7     17      9   180.00  15.16700   2 ;     H4-    C5-    C6-    H5
+    18      8      9     19      9     0.00   0.50208   3 ;     H6-    C7-    C8-    H7
+    18      8      9     20      9     0.00   0.50208   3 ;     H6-    C7-    C8-    H8
+    18      8      9     21      9     0.00   0.50208   3 ;     H6-    C7-    C8-    H9
+    18      8     10     22      9     0.00   0.50208   3 ;     H6-    C7-    C9-   H10
+    18      8     10     23      9     0.00   0.50208   3 ;     H6-    C7-    C9-   H11
+    18      8     10     24      9     0.00   0.50208   3 ;     H6-    C7-    C9-   H12
+
+[ dihedrals ] ; impropers
+; treated as propers in GROMACS to use correct AMBER analytical function
+;    i      j      k      l   func   phase     kd      pn
+     1      2      7      3      4   180.00   4.60240   2 ;      C-    C1-    C6-    C2
+     2      4      3     15      4   180.00   4.60240   2 ;     C1-    C3-    C2-    H3
+     2      6      7     17      4   180.00   4.60240   2 ;     C1-    C5-    C6-    H5
+     3      5      4     11      4   180.00   4.60240   2 ;     C2-    C4-    C3-     O
+     5      7      6     16      4   180.00   4.60240   2 ;     C4-    C6-    C5-    H4
+     8      4      5      6      4   180.00   4.60240   2 ;     C7-    C3-    C4-    C5

@@ -1,0 +1,17 @@
+integrator	    = steep		    ; Algorithm (steep = steepest descent minimization)
+emtol		    = 50.0  	 	; Stop minimization when the maximum force < 1000.0 kJ/mol
+emstep          = 0.01      	; Energy step size
+nsteps		    = 1000000	  	; Maximum number of (minimization) steps to perform
+
+; Neighbor searching and vdW
+cutoff-scheme            = Verlet               ; Verlet neighbor list
+verlet-buffer-tolerance  = 1e-4                 ; Choose neighbor list cutoff/update to achieve this energy tolerance
+
+coulombtype              = PME                  ; Use particle mesh Ewald
+rcoulomb                 = 1.2                  ; Coulomb short range cutoff
+
+vdwtype                  = Cut-off              ; VDW type; by default uses potential shift
+rvdw                     = 1.2                  ; VDW cutoff distance
+DispCorr                 = EnerPres             ; Apply analytical dispersion corrections to energy/pressure
+
+pbc                     = xyz                   ; 3-D PBC

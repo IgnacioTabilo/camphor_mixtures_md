@@ -1,0 +1,6 @@
+TITLE     CO2 EPM2 flexible model (r_CO = 1.149 A)
+REMARK    Bond length: 1.149 Angstrom (EPM2 flexible)
+HETATM    1  CA  CO2     1       0.000   0.000   0.000  1.00  0.00           C
+HETATM    2  OC1 CO2     1      -1.149   0.000   0.000  1.00  0.00           O
+HETATM    3  OC2 CO2     1       1.149   0.000   0.000  1.00  0.00           O
+END

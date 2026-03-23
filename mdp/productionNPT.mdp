@@ -1,0 +1,39 @@
+; Run parameters
+integrator               = md                   ; leap-frog integrator
+tinit                    = 0                    ; Initial time of the simulation
+dt                       = 0.001                ; 1 fs timestep
+nsteps                   = VALUE_NSTEPS         ; 250 ps equilibration
+comm-mode                = Linear               ; Remove center of mass translation
+continuation             = yes
+
+nstenergy                = 5000                 ; frequency (n_steps) to output energies to .edr file
+nstlog                   = 5000                 ; frequency (n_steps) to output data to .log file
+nstxout-compressed       = 50000                ; frequency to output compressed (.xtc) coordinates
+
+cutoff-scheme            = Verlet               ; Verlet neighbor list
+verlet-buffer-tolerance  = 1e-4                 ; Choose neighbor list cutoff/update to achieve this energy tolerance
+
+coulombtype              = PME                  ; Use particle mesh Ewald
+rcoulomb                 = 1.2                  ; Coulomb short range cutoff
+
+vdwtype                  = Cut-off              ; VDW type; by default uses potential shift
+rvdw                     = 1.2                  ; VDW cutoff distance
+DispCorr                 = EnerPres             ; Apply analytical dispersion corrections to energy/pressure
+
+tcoupl                   = nose-hoover		; Nose-Hoover thermostat
+tc-grps                  = System               ; Apply temperature coupling to whole system
+tau-t                    = 2.0                  ; time constant for temperature coupling (ps)
+nsttcouple		 = 5			; Interval between steps for thermostat
+ref-t                    = TEMPERATURE
+
+pcoupl                   = parrinello-rahman    ; Use Parrinello-Rahman pressure coupling
+tau_p                    = 5.0                  ; time constant for pressure coupling (ps)
+compressibility          = 4.5e-5               ; compressibility of water (1/bar)
+ref_p                    = PRESSURE             ; reference pressure, 1 bar
+
+pbc                     = xyz                   ; 3-D PBC
+
+constraints             = h-bonds               ; Apply hydrogen bond constraints
+constraint_algorithm    = lincs                 ; Use LINCS algorithm for constraints
+
+gen_vel                 = no                  

@@ -2,7 +2,7 @@
 
 Supporting data for:
 
-> **Terpene-Based Eutectic Mixtures as Green Solvents for CO₂ Capture: Experimental Characterization and Molecular Insights**
+> **Terpene-Based Eutectic Mixtures as Green Solvents for CO$_2$ Capture: Experimental Characterization and Molecular Insights**
 
 ## Overview
 

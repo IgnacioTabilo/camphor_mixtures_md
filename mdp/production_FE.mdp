@@ -1,11 +1,3 @@
-; May 10, 2024
-; Esteban Cea Klapp
-
-; See eql.mdp for comments explaining each option
-; Key difference here is that we have switched
-; to a (better) Parrinello-Rahman barostat and
-; run for 50 ns
-
 ; NOTE: the init-lambda-state is now a string MYLAMBDA
 ; that will be replaced via sed before the simulation
 

@@ -18,7 +18,7 @@ This repository contains the force field parameters, simulation input files, and
 
 ## Contents
 
-**`ff/`** — GROMACS-compatible force field files corresponding to the **modified Seminario (mSEM) parametrization** selected in the paper after benchmarking against experimental densities, and used for all simulations. Note that CO₂ uses the flexible EMP2 force field
+**`ff/`** — GROMACS-compatible force field files corresponding to the **modified Seminario (mSEM) parametrization** selected in the paper after benchmarking against experimental densities, and used for all simulations. Note that CO₂ uses the EPM2 force field.
 
 **`ff_validation/`** — Force field files for the remaining parametrization strategies compared in the force field validation: standard GAFF2 (`ff_GAFF2/`), RESP charge reassignment (`ff_RESP/`), and fitted dihedrals (`ff_DH-fit/`).
 

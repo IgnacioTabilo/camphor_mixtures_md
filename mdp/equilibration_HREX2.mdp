@@ -1,6 +1,3 @@
-; April 11, 2024
-; Esteban Cea Klapp
-
 integrator               = sd
 dt                       = 0.001                ; 1 fs
 nsteps                   = VALUE_NSTEPS

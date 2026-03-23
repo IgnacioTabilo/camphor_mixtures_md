@@ -1,0 +1,54 @@
+; Run parameters
+integrator		= md			; leap-frog integrator
+tinit			= 0			; Starting time of the simulation
+dt			= 0.001			; 1 fs timestep
+nsteps			= VALUE_NSTEPS
+comm-mode               = Linear		; Remove center of mass translation
+
+; Control output frequency
+nstenergy               = 15000			; freq. (n_steps) to output energies to .edr file
+nstlog			= 15000			; freq. (n_steps) to output data to .log file
+nstxout			= 15000			; freq. (n_steps) to write coordinates to trr trajectory
+nstvout			= 15000			; freq. (n_steps) to write velocities  to trr trajectory
+
+; Neighbor search and Periodic boundary conditions
+cutoff-scheme           = Verlet		; Verlet neighbor list
+nstlist                 = 20			; freq. to update neighbor list & long range forces (>= 20 w/ GPUs)
+rlist                   = 1.2			; short-range neighbor list cutoff (nm)
+pbc                     = xyz			; Periodicity in x, y and z
+
+; Coulomb interaction
+coulombtype             = PME			; particle-mesh ewald (PME) summation for long range (>rcoulomb)
+rcoulomb                = 1.2			; short-range electrostatic cutoff (nm)
+fourierspacing          = 0.12			; spacing of FFT in reciprocal space in PME
+
+; Lennard-Jones potential handling
+vdwtype                 = cut-off		; simple truncation cutoff
+vdw-modifier		= Potential-shift	; shift the VdW potential by a constant such that it is zero at the cut-off
+rvdw_switch		= 1			; where to start switching the LJ force and possibly the potential (nm)
+rvdw                    = 1.2			; short-range VdW cutoff (nm)
+DispCorr		= EnerPres		; long range correction for energy and pressure from using VdW cutoff
+
+; Temperature coupling
+tcoupl			= nose-hoover		; NPT thermostate
+tc-grps			= System		; groups to couple to temperature bath
+tau_t			= 2.0			; time constant for temperature coupling (ps)
+nsttcouple		= 5			; Interval between stepts for thermostat
+ref_t			= TEMPERATURE		; coupling temperature (K)
+
+; Pressure coupling
+pcoupl                  = no			; NVT ensemble
+
+; Velocity generation
+gen-vel			= yes
+gen-temp		= TEMPERATURE
+gen-seed		= -1			; generate random seed
+
+; Constraints
+constraints             = hbonds		; apply hydrogen bond constraints
+constraint_algorithm    = LINCS			; use LINCS algorithm for constraints
+lincs-order		= 2			; order in constraint coupling matrix expansion
+continuation		= no			; no for applying constraints at start of run
+
+cos-acceleration	= AMP			; amplitude of the acceleration profile for calculating the viscosity (nm ps^-2)
+

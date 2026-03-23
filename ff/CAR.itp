@@ -1,4 +1,4 @@
-; 1,4-LJ=GAFF2, Q=GAFF2, bonds=mSem, angles=mSem, dihedrals=GAFF2 (GAGASESEGA)
+; 1,4-LJ=GAFF2, Q=GAFF2, bonds=mSem, angles=mSem, dihedrals=GAFF2
 [ moleculetype ]
 ;name            nrexcl
  CRV              3
